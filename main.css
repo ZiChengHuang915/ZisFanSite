@@ -10,16 +10,19 @@ body, html {
 }
 
 a:link, a:visited {
-  background-color: #f44336;
+  background-color: #6f97a6;
   color: white;
-  padding: 14px 25px;
+  padding-top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
 }
 
 a:hover, a:active {
-  background-color: red;
+  background-color: #466568;
 }
 
 .title {  
@@ -44,6 +47,9 @@ a:hover, a:active {
 
 .info {
     margin-top: 30vh;
+    font-family: 'Gaegu';
+    font-size: 24px;
+    font-weight: 900;
 }
 
 
