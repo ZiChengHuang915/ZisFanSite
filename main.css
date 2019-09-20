@@ -12,13 +12,13 @@ body, html {
 a:link, a:visited {
   background-color: #6f97a6;
   color: white;
-  padding-top: 0;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  margin-bottom: 10vh;
 }
 
 a:hover, a:active {
