@@ -1,28 +1,52 @@
-body {
-	background:#999;
-	font-family: arial;
+body, html {
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url("images/1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-h1, h2, li {
-	color: #555;
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
-a {
-	color: green;
+a:hover, a:active {
+  background-color: red;
 }
 
-p {
-	background: #666;
-	color: white;
-	padding: 10px;
+.title {  
+    margin-top: 20vh;
+    text-align: center;
 }
 
-.secondary {
-	background: none;
-	color: #777;
+.titleFont {
+    font-family: 'Frijole';
+    font-size: 100px;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
 }
 
-#special {
-	background: none;
-	color: green;
+.job {
+    background-color:none;
+    display: inline;
+    border-radius: 5px;
+    font-family: 'Gaegu';
+    font-size: 26px;
 }
+
+.info {
+    margin-top: 30vh;
+}
+
+
+
+
+
