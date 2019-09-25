@@ -9,19 +9,26 @@ body, html {
     background-size: cover;
 }
 
-a:link, a:visited {
+a.image:link, a.image:visited {
+}
+
+a.image:hover, a.image:active {
+}
+
+
+a.resume:link, a.resume:visited {
   background-color: #6f97a6;
   color: white;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin-bottom: 0vh;
+  margin-bottom: 5vh;
 }
 
-a:hover, a:active {
+a.resume:hover, a.resume:active {
   background-color: #466568;
 }
 
@@ -62,6 +69,7 @@ a:hover, a:active {
     text-align: center;
     line-height: 0.1;
 }
+ 
 
 
 
