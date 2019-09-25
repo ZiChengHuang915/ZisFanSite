@@ -12,13 +12,13 @@ body, html {
 a:link, a:visited {
   background-color: #6f97a6;
   color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 8px;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 4px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin-bottom: 10vh;
+  margin-bottom: 0vh;
 }
 
 a:hover, a:active {
@@ -26,7 +26,7 @@ a:hover, a:active {
 }
 
 .title {  
-    margin-top: 20vh;
+    margin-top: 0vh;
     text-align: center;
 }
 
@@ -39,10 +39,12 @@ a:hover, a:active {
 
 .job {
     background-color:none;
-    display: inline;
+    display: block;
     border-radius: 5px;
     font-family: 'Gaegu';
     font-size: 26px;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .info {
@@ -52,9 +54,15 @@ a:hover, a:active {
     font-weight: 900;
 }
 
-.tab {
-  margin-left: 40px;
+.top {
+    margin-top: 5vh;
+    font-family: 'Gaegu';
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 0.1;
 }
+
 
 
 
