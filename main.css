@@ -26,10 +26,14 @@ a.resume:link, a.resume:visited {
   text-decoration: none;
   display: inline-block;
   margin-bottom: 5vh;
+  position: sticky;
+  bottom: 10px;
 }
 
 a.resume:hover, a.resume:active {
   background-color: #466568;
+  position: sticky;
+  bottom: 10px;
 }
 
 .title {  
@@ -55,7 +59,7 @@ a.resume:hover, a.resume:active {
 }
 
 .info {
-    margin-top: 30vh;
+    margin-top: 40vh;
     font-family: 'Gaegu';
     font-size: 24px;
     font-weight: 900;
