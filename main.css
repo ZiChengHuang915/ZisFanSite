@@ -9,6 +9,10 @@ body, html {
     background-size: cover;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a.image:link, a.image:visited {
 }
 
@@ -27,13 +31,13 @@ a.resume:link, a.resume:visited {
   display: inline-block;
   margin-bottom: 5vh;
   position: sticky;
-  bottom: 10px;
+  bottom: 5vh;
 }
 
 a.resume:hover, a.resume:active {
   background-color: #466568;
   position: sticky;
-  bottom: 10px;
+  bottom: 5vh;
 }
 
 .title {  
@@ -48,18 +52,58 @@ a.resume:hover, a.resume:active {
     margin-bottom: 3vh;
 }
 
+.work {
+  background-color: #5F8089;
+  padding-bottom: 5vh;
+  margin-top: 70vh;
+}
+
+.tictactoeblock {
+  margin-left: 20vw;
+  margin-right: 20vw;
+  background-color: #B7D6E8;
+  padding: 5vh;
+}
+
 .job {
     background-color:none;
     display: block;
     border-radius: 5px;
     font-family: 'Gaegu';
     font-size: 26px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.tictactoe {
+    font-family: 'Gaegu';
+    font-size: 22px;
+}
+
+.workFont {
+    background-color:none;
+    display: block;
+    border-radius: 5px;
+    font-family: 'Gaegu';
+    font-size: 70px;
     margin-left: 10vw;
     margin-right: 10vw;
+    padding-top: 5vh;
 }
 
 .info {
-    margin-top: 40vh;
     font-family: 'Gaegu';
     font-size: 24px;
     font-weight: 900;
