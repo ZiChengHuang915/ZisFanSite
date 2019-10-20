@@ -13,19 +13,12 @@ body, html {
   box-sizing: border-box;
 }
 
-a.image:link, a.image:visited {
-}
-
-a.image:hover, a.image:active {
-}
-
-
 a.resume:link, a.resume:visited {
   background-color: #6f97a6;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
-  border-radius: 4px;
+  border-radius: 0;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -38,6 +31,8 @@ a.resume:hover, a.resume:active {
   background-color: #466568;
   position: sticky;
   bottom: 5vh;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
 .title {  
@@ -46,7 +41,7 @@ a.resume:hover, a.resume:active {
 }
 
 .titleFont {
-    font-family: 'Frijole';
+    font-family: 'Monofett';
     font-size: 100px;
     margin-top: 5vh;
     margin-bottom: 3vh;
@@ -124,6 +119,23 @@ a.resume:hover, a.resume:active {
     font-weight: 900;
     text-align: center;
     line-height: 0.1;
+}
+
+.links {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.links p {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.links img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }
 
 @media screen and (max-width: 900px) {
