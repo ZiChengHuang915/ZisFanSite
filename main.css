@@ -63,6 +63,14 @@ a.resume:hover, a.resume:active {
   margin-right: 20vw;
   background-color: #B7D6E8;
   padding: 5vh;
+  margin-bottom: 5vh;
+}
+
+.secondprojectblock {
+  margin-left: 20vw;
+  margin-right: 20vw;
+  background-color: #B7D6E8;
+  padding: 5vh;
 }
 
 .job {
@@ -93,14 +101,14 @@ a.resume:hover, a.resume:active {
 }
 
 .workFont {
-    background-color:none;
+    background-color: #B7D6E8;
     display: block;
     border-radius: 5px;
     font-family: 'Gaegu';
     font-size: 70px;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    padding-top: 5vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    margin-bottom: 10vh;
 }
 
 .info {
