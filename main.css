@@ -49,7 +49,7 @@ a.resume:hover, a.resume:active {
 
 .work {
   background-color: #5F8089;
-  padding-bottom: 5vh;
+  padding-bottom: 0vh;
   margin-top: 70vh;
 }
 
@@ -96,14 +96,27 @@ a.resume:hover, a.resume:active {
 }
 
 .workFont {
-    background-color: #B7D6E8;
+    background-color: #29484D;
     display: block;
     border-radius: 5px;
     font-family: 'Gaegu';
     font-size: 70px;
     padding-top: 3vh;
     padding-bottom: 3vh;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
+    color: white;
+}
+
+.workFontEnd {
+    background-color: #29484D;
+    display: block;
+    border-radius: 5px;
+    font-family: 'Gaegu';
+    font-size: 70px;
+    padding-top: 3vh;
+    padding-bottom: 0vh;
+    margin-bottom: 0vh;
+    color: white;
 }
 
 .info {
