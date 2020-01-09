@@ -67,20 +67,12 @@ a.resume:hover, a.resume:active {
   display: table;
 }
 
-.firstprojectblock {
+.projectblock {
   margin-left: 5vw;
   margin-right: 5vw;
   background-color: #B7D6E8;
   padding: 5vh;
   margin-bottom: 5vh;
-  opacity: 1;
-}
-
-.secondprojectblock {
-  margin-left: 5vw;
-  margin-right: 5vw;
-  background-color: #B7D6E8;
-  padding: 5vh;
   opacity: 1;
 }
 
@@ -98,7 +90,7 @@ a.resume:hover, a.resume:active {
 .column {
   float: left;
   width: 50%;
-  padding: 5px;
+  padding: 0px;
 }
 
 .row::after {
@@ -107,7 +99,7 @@ a.resume:hover, a.resume:active {
   display: table;
 }
 
-.tictactoe {
+.description {
     font-family: 'Gaegu';
     font-size: 22px;
 }
@@ -178,16 +170,7 @@ a.resume:hover, a.resume:active {
     margin-right: 0vw;
 }
 
-  .firstprojectblock {
-    margin-top: 0;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-bottom: 5vh;
-    background-color: #B7D6E8;
-    padding: 5vh;
-  }
-
-  .secondprojectblock {
+  .projectblock {
     margin-top: 0;
     margin-left: 5vw;
     margin-right: 5vw;
