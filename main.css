@@ -61,6 +61,11 @@ a.resume:hover, a.resume:active {
   margin-right: 30vw;
 }
 
+.mePic {
+  width: 50%;
+  border-radius: 50%;
+}
+
 .titleRow::after {
   content: "";
   clear: both;
@@ -161,14 +166,24 @@ a.resume:hover, a.resume:active {
 }
 
 @media screen and (max-width: 1200px) {
-.work {
+  .main {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .mePic {
+    width: 50%;
+    border-radius: 50%;
+  }
+
+  .work {
     background-color: #5F8089;
     padding-bottom: 0vh;
     margin-top: 20vh;
     opacity: 0.95;
     margin-left: 0vw;
     margin-right: 0vw;
-}
+  }
 
   .projectblock {
     margin-top: 0;
