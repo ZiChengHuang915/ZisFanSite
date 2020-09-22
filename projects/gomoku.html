@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gomoku - Zi's Fan Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="stylesheet" type="text/css" href="projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="description">
+        <img class="picture_description" src="../images/Gomoku showcase.png" alt="Gomoku">
+        <p><b>Gomoku</b>, or Five in a Row, is a board game played with Go pieces. Similar to Tic Tac Toe, players alternate in placing a stone on an empty spot, and the first player to reach five stones in a row wins. However, Gomoku is drastically more
+            complex than other similarly styled m,n,k-games, with a game-tree complexity of 10<sup>70</sup> possible game states. This makes the minimax algorithm for the AI component much slower to compute, as there is now a maximum of 15*15 moves possible
+            taken by a player on each move, as opposed to 9 for Tic Tac Toe. With this in mind, and also the fact that the algorithm has to search several moves ahead in time, the computational time required makes it impossible to solve the game, at least
+            in this scale. To optimize the search times, the most popular pruning method, alpha-beta pruning, was used. In addition, only moves that are adjacent to the current game shape are considered, meaning moves that are far away from any other
+            pieces are omitted.
+            <br><br> Fortunately, Gomoku is solved, meaning that there is a winning strategy such that if played perfectly, the first player (black) will always win. You can take a look at the article <a href="../sources/allis1994.pdf">here</a>. This
+            project was coded in <b>Java</b> and the sprites created in <b>Photoshop</b>.
+            <br><br> You can take a look at the project <a href="https://github.com/ZiChengHuang915/Gomoku">here</a>.</p>
+    </div>
+
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="puzzle.html">Puzzle</a>
+        <a href="gomoku.html">Gomoku</a>
+        <a href="mastermind.html">Mastermind</a>
+        <a href="tic tac toe.html">Tic Tac Toe</a>
+        <a href="">Coming Soon...</a>
+
+    </div>
+
+    <div class="navbar_links">
+        <p>
+            <a href="https://www.facebook.com/zichuang127"><img src="../images/facebook.png" title="facebook" alt="facebook"></a>
+        </p>
+
+        <p>
+            <a href="https://www.linkedin.com/in/zichenghuang915/"><img src="../images/linkedin.jpg" title="linkedin" alt="linkedin"></a>
+        </p>
+
+        <p>
+            <a href="https://www.quora.com/profile/ZiCheng-Huang-10"><img src="../images/quora.png" title="quora" alt="quora"></a>
+        </p>
+    </div>
+</body>
+
+</html>

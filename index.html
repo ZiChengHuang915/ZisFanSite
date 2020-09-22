@@ -5,97 +5,35 @@
     <title>Zi's Fan Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link href='https://fonts.googleapis.com/css?family=Monofett' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Gaegu' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="title">
-        <h1 class="titleFont">Zi Cheng Huang</h1>
-        <div class="main">
-            <img class="mePic" src="images/zi.jpg">
-            <div class="titleRow">
-                <p class="job">Hello there! I'm Zi, and I'm a second year student studying Computer Science at the University of Waterloo. I'm a big fan of enthusiast desktop hardware as well as the art of gardening. In my spare time, I like to play badminton, as well
-                    as tend to John, my lovely terrarium.</p>
-            </div>
-        </div>
+    <h1 class="name">Zi Cheng Huang</h1>
 
-        <div class="work">
-            <h2 class="workFont">My Work</h2>
-            <div class="projectblock">
-                <div>
-                    <img src="images/Gomoku showcase.png" alt="Gomoku" style="width:100%">
-                </div>
-                <p class="description" align="justify"><b>Gomoku</b>, or Five in a Row, is a board game played with Go pieces. Similar to Tic Tac Toe, players alternate in placing a stone on an empty spot, and the first player to reach five stones in a row wins. However, Gomoku is drastically
-                    more complex than other similarly styled m,n,k-games, with a game-tree complexity of 10<sup>70</sup> possible game states. This makes the minimax algorithm for the AI component much slower to compute, as there is now a maximum of 15*15
-                    moves possible taken by a player on each move, as opposed to 9 for Tic Tac Toe. With this in mind, and also the fact that the algorithm has to search several moves ahead in time, the computational time required makes it impossible
-                    to solve the game, at least in this scale. To optimize the search times, the most popular pruning method, alpha-beta pruning, was used. In addition, only moves that are adjacent to the current game shape are considered, meaning moves
-                    that are far away from any other pieces are omitted.
-                    <br><br> Fortunately, Gomoku is solved, meaning that there is a winning strategy such that if played perfectly, the first player (black) will always win. You can take a look at the article <a href="allis1994.pdf">here</a>. This project
-                    was coded in <b>Java</b> and the sprites created in <b>Photoshop</b>.
-                    <br><br> You can take a look at the project <a href="https://github.com/ZiChengHuang915/Gomoku">here</a>.</p>
-            </div>
+    <div class="navbar">
+        <a href="">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects/puzzle.html">Puzzle</a>
+        <a href="projects/gomoku.html">Gomoku</a>
+        <a href="projects/mastermind.html">Mastermind</a>
+        <a href="projects/tic tac toe.html">Tic Tac Toe</a>
+        <a href="">Coming Soon...</a>
+    </div>
 
-            <div class="projectblock">
+    <div class="navbar_links">
+        <p>
+            <a href="https://www.facebook.com/zichuang127"><img src="images/facebook.png" title="facebook" alt="facebook"></a>
+        </p>
 
+        <p>
+            <a href="https://www.linkedin.com/in/zichenghuang915/"><img src="images/linkedin.jpg" title="linkedin" alt="linkedin"></a>
+        </p>
 
-                <img src="images/mm-title.jpg" alt="mm-title" style="width:100%; margin-bottom: -4px;">
-                <div class="row">
-                    <div class="column">
-                        <img src="images/mm-ingame.jpg" alt="Human vs AI" style="width:100%">
-                    </div>
-                    <div class="column">
-                        <img src="images/mm-lose.jpg" alt="AI vs AI" style="width:100%">
-                    </div>
-                </div>
-
-                <p class="description" align="justify"><b>Mastermind</b>, according to Wikipedia, is a code-breaking game for two players. The game is playing using a decoding board, eight colors, and a code length of adjustable size (by default it is 4). One player creates a code, and the
-                    other player tries to guess the code in an alotted number of tries, usually 12. After each try, the first player gives hints based on the code that the second player has just guessed. The blue circles represent the number of correct
-                    colors in the wrong position, and the red circles represent the number of correct colors in the right position. Based on this input, player two suppoedly makes a better guess each time.
-                    <br><br> The graphics, especially the circle making, was sourced from this text: <a href="http://weigand.weebly.com/uploads/7/0/1/1/7011152/chapter_8_-_pixel_graphics.pdf">Pixel Graphics</a>. This project was coded in <b>Turing</b>.
-                    <br><br> You can take a look at the project <a href="https://github.com/ZiChengHuang915/Mastermind">here</a>.</p>
-            </div>
-
-            <div class="projectblock">
-                <div class="row">
-                    <div class="column">
-                        <img src="images/TicTacToe Human vs AI Demonstration.gif" alt="Human vs AI" style="width:100%">
-                    </div>
-                    <div class="column">
-                        <img src="images/TicTacToe AI vs AI Demonstration.gif" alt="AI vs AI" style="width:100%">
-                    </div>
-                </div>
-
-                <p class="description" align="justify"><b>Tic Tac Toe</b> is a paper and pencil game for two players, representing X and O. They take turns marking the 3 by 3 grid, and whoever marks three of their symbols in either a horizontal, vertical, or diagonal row wins the game. The
-                    bot uses the minimax algorithm to figure out the best move to make. It is a recursive algorithm, which chooses the optimal move while also assuming the opponent also will make an optimal move. One player is the maximizer (tries to
-                    maximize the score), and the other is the minimizer. For example, a win for X would be considered the max score, so the algorithm would try to achieve the max score. Since Tic Tac Toe has a relatively small board, the number of possible
-                    game moves is only 5478 (see math.stackexchange user MJD's calculations <a href="https://gist.github.com/mjdominus/6465846">here</a>). For a much more complex game such as Chess or Go, a more efficient method like alpha-beta pruning
-                    would be used to optimize the search times. This project was coded in <b>Java</b>.
-                    <br><br> You can take a look at the project <a href="https://github.com/ZiChengHuang915/TicTacToeMinimax">here</a> and download the game <a href="TicTacToe.jar" download="TicTacToe.jar">here</a>.</p>
-            </div>
-
-            <h2 class="workFontEnd">...</h2>
-        </div>
-        <p class="info">July 21, 2001<br>Waterloo, Ontario, Canada</p>
-
-        <div class="links">
-            <p>
-                <a href="https://www.facebook.com/zichuang127"><img src="images/facebook.png" title="facebook" alt="facebook"></a>
-            </p>
-
-            <p>
-                <a href="https://www.linkedin.com/in/zichenghuang915/"><img src="images/linkedin.jpg" title="linkedin" alt="linkedin"></a>
-            </p>
-
-            <p>
-                <a href="https://www.quora.com/profile/ZiCheng-Huang-10"><img src="images/quora.png" title="quora" alt="quora"></a>
-            </p>
-        </div>
-
-        <a class="resume" href="Zi's Resume Online.pdf " download="Zi's Resume" target="_blank">
-            <p style="color: #493f24; font-family: 'Monofett'; font-size: 30px; margin: 1vh;">Resume!</p>
-        </a>
+        <p>
+            <a href="https://www.quora.com/profile/ZiCheng-Huang-10"><img src="images/quora.png" title="quora" alt="quora"></a>
+        </p>
     </div>
 
 </body>

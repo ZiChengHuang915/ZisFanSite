@@ -1,0 +1,102 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(140, 73, 52);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.picture_description {
+    margin-top: 5vh;
+    width: 100%;
+}
+
+.description {
+    background-color: none;
+    color: black;
+    display: block;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 30vw;
+    margin-left: 30vw;
+    margin-bottom: 20vh;
+    text-align: justify;
+}
+
+a:link,
+a:visited {
+    background-color: rgb(140, 73, 52);
+    color: rgb(233, 187, 102);
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: sticky;
+    bottom: 5vh;
+}
+
+a:hover,
+a:active {
+    background-color: rgb(87, 44, 31);
+    position: sticky;
+    bottom: 5vh;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(140, 73, 52);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar a {
+    font-family: 'Ubuntu', sans-serif;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 25px 20px 25px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: rgb(140, 73, 52);
+    color: black;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.navbar_links {
+    position: fixed;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.navbar_links p {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar_links img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width: 1200px) {}
