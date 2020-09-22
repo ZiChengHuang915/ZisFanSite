@@ -22,9 +22,9 @@ html {
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     text-align: center;
-    margin-right: 30vw;
-    margin-left: 30vw;
-    margin-bottom: 20vh;
+    margin-right: 35vw;
+    margin-left: 35vw;
+    margin-bottom: 15vh;
     text-align: justify;
 }
 
@@ -57,6 +57,7 @@ a:active {
     position: fixed;
     bottom: 0;
     width: 100%;
+    margin: 0;
 }
 
 .navbar a {
@@ -99,4 +100,36 @@ a:active {
     height: 50px;
 }
 
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1200px) {
+    .description {
+        background-color: none;
+        color: black;
+        display: block;
+        border-radius: 5px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        margin-right: 5vw;
+        margin-left: 5vw;
+        margin-bottom: 20vh;
+        text-align: justify;
+    }
+    .navbar {
+        overflow: hidden;
+        background-color: rgb(140, 73, 52);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .navbar a {
+        font-family: 'Ubuntu', sans-serif;
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 15px 15px 15px 15px;
+        text-decoration: none;
+        font-size: 15px;
+    }
+}
