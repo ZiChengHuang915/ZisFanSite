@@ -10,42 +10,48 @@
 </head>
 
 <body>
-    <h1 class="name">Zi Cheng Huang</h1>
+    <div class="entire">
+        <div class="logo">
+            <img src="images/logo.png">
+        </div>
 
-    <div class="navbar_links">
-        <p>
-            <a href="https://www.facebook.com/zichuang127"><img src="images/facebook.png" title="facebook" alt="facebook"></a>
-        </p>
+        <h1 class="name">Zi Cheng Huang</h1>
 
-        <p>
-            <a href="https://www.linkedin.com/in/zichenghuang915/"><img src="images/linkedin.jpg" title="linkedin" alt="linkedin"></a>
-        </p>
+        <div class="navbar_links">
+            <p>
+                <a href="https://www.facebook.com/zichuang127"><img src="images/facebook.png" title="facebook" alt="facebook"></a>
+            </p>
 
-        <p>
-            <a href="https://www.quora.com/profile/ZiCheng-Huang-10"><img src="images/quora.png" title="quora" alt="quora"></a>
-        </p>
-    </div>
+            <p>
+                <a href="https://www.linkedin.com/in/zichenghuang915/"><img src="images/linkedin.jpg" title="linkedin" alt="linkedin"></a>
+            </p>
 
-    <div class="navbar" id="my_navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects/puzzle.html">Puzzle</a>
-        <a href="projects/gomoku.html">Gomoku</a>
-        <a href="projects/mastermind.html">Mastermind</a>
-        <a href="projects/tic tac toe.html">Tic Tac Toe</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
+            <p>
+                <a href="https://www.quora.com/profile/ZiCheng-Huang-10"><img src="images/quora.png" title="quora" alt="quora"></a>
+            </p>
+        </div>
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("my_navbar");
-            if (x.className === "navbar") {
-                x.className += " responsive";
-            } else {
-                x.className = "navbar";
+        <div class="navbar" id="my_navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects/puzzle.html">Puzzle</a>
+            <a href="projects/gomoku.html">Gomoku</a>
+            <a href="projects/mastermind.html">Mastermind</a>
+            <a href="projects/tic tac toe.html">Tic Tac Toe</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("my_navbar");
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar";
+                }
             }
-        }
-    </script>
+        </script>
+    </div>
 </body>
 
 </html>
