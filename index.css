@@ -50,9 +50,9 @@ html {
 }
 
 .navbar_links {
-    position: fixed;
+    position: absolute;
     left: 50%;
-    top: 5vh;
+    bottom: 5vh;
     transform: translate(-50%, -50%);
     margin: 0 auto;
     text-align: center;
@@ -85,9 +85,9 @@ html {
     }
     .navbar_links {
         width: 100%;
-        position: fixed;
+        position: absolute;
         left: 50%;
-        top: 5vh;
+        bottom: 48px;
         transform: translate(-50%, -10%);
         margin: 0 auto;
         text-align: center;

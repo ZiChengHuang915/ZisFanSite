@@ -12,7 +12,7 @@ html {
 
 .mePic {
     display: block;
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-left: auto;
     margin-right: auto;
     width: 15%;
@@ -47,14 +47,12 @@ a.resume:visited {
     text-decoration: none;
     display: inline-block;
     position: sticky;
-    bottom: 5vh;
 }
 
 a.resume:hover,
 a.resume:active {
     background-color: rgb(87, 44, 31);
     position: sticky;
-    bottom: 5vh;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
@@ -91,9 +89,9 @@ a.resume:active {
 }
 
 .navbar_links {
-    position: fixed;
+    position: absolute;
     left: 50%;
-    top: 5vh;
+    bottom: 5vh;
     transform: translate(-50%, -50%);
     margin: 0 auto;
     text-align: center;
@@ -126,9 +124,9 @@ a.resume:active {
     }
     .navbar_links {
         width: 100%;
-        position: fixed;
+        position: absolute;
         left: 50%;
-        top: 5vh;
+        bottom: 48px;
         transform: translate(-50%, -10%);
         margin: 0 auto;
         text-align: center;
@@ -144,7 +142,7 @@ a.resume:active {
     }
     .mePic {
         display: block;
-        margin-top: 15vh;
+        margin-top: 5vh;
         margin-left: auto;
         margin-right: auto;
         width: 30%;
