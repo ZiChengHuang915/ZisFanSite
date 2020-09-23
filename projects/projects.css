@@ -38,14 +38,12 @@ a:visited {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    position: sticky;
     bottom: 0vh;
 }
 
 a:hover,
 a:active {
     background-color: rgb(87, 44, 31);
-    position: sticky;
     bottom: 5vh;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
