@@ -81,7 +81,7 @@ a.resume:active p {
 }
 
 .navbar {
-    background-color: rgb(8, 18, 41);
+    background-color: none;
     overflow: hidden;
     position: fixed;
     bottom: 0;
@@ -197,6 +197,14 @@ a.resume:active p {
         display: block;
         padding-bottom: 15vh;
         margin-left: 5vw;
+    }
+    .navbar {
+        background-color: rgb(8, 17, 37);
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        margin: 0;
     }
     .navbar a {
         font-family: 'Ubuntu', sans-serif;

@@ -1,12 +1,11 @@
 body,
 html {
+    overflow: auto;
     margin: 0;
     padding: 0;
     height: 100%;
+    background-color: none;
     background-image: linear-gradient(145deg, rgb(0, 0, 0), rgb(8, 18, 41));
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .picture_description {
@@ -48,7 +47,7 @@ a:active {
 }
 
 .navbar {
-    background-color: rgb(8, 18, 41);
+    background-color: rgb(8, 17, 37);
     overflow: hidden;
     position: fixed;
     bottom: 0;
