@@ -108,6 +108,13 @@ html {
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .logo img {
+        margin-top: 5vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        max-width: 90vw;
+        max-height: 40vh;
+    }
     .navbar_links {
         width: 100%;
         position: absolute;
