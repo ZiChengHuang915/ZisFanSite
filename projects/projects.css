@@ -3,7 +3,7 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: rgb(140, 73, 52);
+    background-image: linear-gradient(145deg, rgb(0, 0, 0), rgb(8, 18, 41));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,8 +15,7 @@ html {
 }
 
 .description {
-    background-color: none;
-    color: black;
+    color: white;
     display: block;
     border-radius: 5px;
     font-family: 'Ubuntu', sans-serif;
@@ -30,7 +29,6 @@ html {
 
 a:link,
 a:visited {
-    background-color: rgb(140, 73, 52);
     color: rgb(233, 187, 102);
     padding-left: 2px;
     padding-right: 2px;
@@ -43,15 +41,15 @@ a:visited {
 
 a:hover,
 a:active {
-    background-color: rgb(87, 44, 31);
+    color: rgb(177, 138, 68);
     bottom: 5vh;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
 
 .navbar {
+    background-color: rgb(8, 18, 41);
     overflow: hidden;
-    background-color: rgb(140, 73, 52);
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -70,8 +68,7 @@ a:active {
 }
 
 .navbar a:hover {
-    background: rgb(140, 73, 52);
-    color: black;
+    color: rgb(50, 50, 50);
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
@@ -82,8 +79,7 @@ a:active {
 
 @media screen and (max-width: 1200px) {
     .description {
-        background-color: none;
-        color: black;
+        color: white;
         display: block;
         border-radius: 5px;
         font-family: 'Ubuntu', sans-serif;

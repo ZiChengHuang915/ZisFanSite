@@ -59,7 +59,7 @@ html {
 
 .navbar a:hover {
     background: black;
-    color: black;
+    color: rgb(50, 50, 50);
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
@@ -88,6 +88,12 @@ html {
     height: 50px;
     padding-left: 1vw;
     padding-right: 1vw;
+}
+
+.navbar_links img:hover {
+    opacity: 0.2;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
 
 @media screen and (max-width: 1200px) {
