@@ -24,7 +24,7 @@ html {
     text-align: center;
     margin-right: 35vw;
     margin-left: 35vw;
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
     text-align: justify;
 }
 
@@ -39,7 +39,7 @@ a:visited {
     text-decoration: none;
     display: inline-block;
     position: sticky;
-    bottom: 5vh;
+    bottom: 0vh;
 }
 
 a:hover,
@@ -78,26 +78,8 @@ a:active {
     transition-duration: 0.4s;
 }
 
-.navbar_links {
-    position: fixed;
-    left: 50%;
-    bottom: 0px;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-.navbar_links p {
-    display: inline;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.navbar_links img {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+.navbar a.icon {
+    display: none;
 }
 
 @media screen and (max-width: 1200px) {
@@ -111,16 +93,8 @@ a:active {
         text-align: center;
         margin-right: 5vw;
         margin-left: 5vw;
-        margin-bottom: 20vh;
+        margin-bottom: 10vh;
         text-align: justify;
-    }
-    .navbar {
-        overflow: hidden;
-        background-color: rgb(140, 73, 52);
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        margin-bottom: 0px;
     }
     .navbar a {
         font-family: 'Ubuntu', sans-serif;
@@ -128,8 +102,32 @@ a:active {
         display: block;
         color: #f2f2f2;
         text-align: center;
-        padding: 15px 15px 15px 15px;
+        padding: 12px 20px 12px 20px;
         text-decoration: none;
-        font-size: 15px;
+        font-size: 20px;
+    }
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .navbar.responsive {
+        float: none;
+        position: relative;
+        display: block;
+        width: 100%;
+        text-align: left;
     }
 }
