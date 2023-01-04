@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ant Simulation - Zi's Fan Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/logo icon.png" sizes="32x32" />
+    <link rel="stylesheet" type="text/css" href="projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="description">
+        <img class="picture_description" src="../images/ant simulation demo.gif" alt="Ant Simulation">
+        <p><b>Ant Simulation</b> is inspired by a project made by Sebastian Lague.
+            <br><br>
+            The simulation follows several heuristics:
+
+        <ul>
+            <li>Ants spawn out of the colony (brown) and aim to find food to bring back to the colony (green).</li>
+            <li>Ants randomly explore the area. If they hit the border, they will bounce back immediately.</li>
+            <li>While exploring, ants secrete a pheromone a pheromone (blue) that helps guide them home if they have
+                found food. In real life, they use other methods in addition, such as the sun or certain landmarks on
+                the ground.</li>
+            <li>If they find food, they secrete a different pheromone to let other ants know of their path (red), and
+                try to find their way home.</li>
+            <li>Pheromones evaporate over time.</li>
+            <li>While other ants do not have food (exploring), they will try to follow red pheromones because it is more
+                likely to find food if they follow this trail than to randomly explore.</li>
+        </ul>
+
+        Over time, this lets the ant colony generate the shortest path to a food source. Because pheromones evaporate
+        over time, less optimal paths will be walked on less, and ants will gravitate towards paths that are more
+        travelled. Iteratively, this produces the optimal path.
+
+        <br><br>
+        If many food sources are present, this is an abstraction of a local search algorithm to solve the <a
+            href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">travelling salesman problem</a>, where the
+        colony is the origin node, and the food source is all the nodes that have to be visitied.
+
+        <br><br>
+        There are several papers published on this niche topic:
+        <ul>
+            <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0303264797017085?via%3Dihub">Ant
+                    colonies
+                    for the travelling salesman problem</a></li>
+            <li><a href="https://casmodeling.springeropen.com/articles/10.1186/s40294-017-0048-9">The generalized
+                    traveling
+                    salesman problem solved with ant algorithms</a></li>
+            <li><a
+                    href="https://www.hilarispublisher.com/open-access/solving-traveling-salesmen-problem-using-ant-colony-optimizationalgorithm-2168-9679-1000260.pdf">Traveling
+                    Salesmen Problem using Ant Colony Optimization Algorithm</a></li>
+        </ul>
+        <br> You can take a look at the project <a
+            href="https://zichenghuang915.github.io/Ant-Simulation/index.html">here</a>, and the source code <a
+            href="https://github.com/ZiChengHuang915/Ant-Simulation">here</a>.</p>
+    </div>
+
+    <div class="navbar" id="my_navbar">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="ant simulation.html">Ant Simulation</a>
+        <a href="puzzle.html">Puzzle</a>
+        <a href="gomoku.html">Gomoku</a>
+        <a href="mastermind.html">Mastermind</a>
+        <a href="tic tac toe.html">Tic Tac Toe</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("my_navbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+
+</html>
