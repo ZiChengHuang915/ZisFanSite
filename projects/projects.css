@@ -88,6 +88,7 @@ a:active {
         margin-left: 5vw;
         text-align: justify;
     }
+
     .navbar a {
         font-family: 'Ubuntu', sans-serif;
         float: left;
@@ -98,23 +99,28 @@ a:active {
         text-decoration: none;
         font-size: 20px;
     }
+
     .navbar a:not(:first-child) {
         display: none;
     }
+
     .navbar a.icon {
         float: right;
         display: block;
     }
+
     .navbar.responsive .icon {
         position: absolute;
         right: 0;
         top: 0;
     }
+
     .navbar.responsive a {
         float: none;
         display: block;
         text-align: left;
     }
+
     .navbar.responsive {
         float: none;
         position: relative;
