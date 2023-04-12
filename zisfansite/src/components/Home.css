@@ -1,7 +1,18 @@
-.Content {
+:root {
+    --primary-main: #000000;
+    --primary-light: #666666;
+}
+
+.HomePage {
     text-align: center;
-    width: 50vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
     margin: auto;
+}
+
+.HomeContent {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
 }
 
 .Name {
@@ -19,7 +30,7 @@
 
 .Link {
     text-decoration: none;
-    color: black;
+    color: var(--primary-main);
     -webkit-transition: all 0.25s ease-out;
     -moz-transition: all 0.25s ease-out;
     -o-transition: all 0.25s ease-out;
@@ -28,5 +39,5 @@
 
 .Link:hover {
     text-decoration: none;
-    color: gray;
+    color: var(--primary-light);
 }
