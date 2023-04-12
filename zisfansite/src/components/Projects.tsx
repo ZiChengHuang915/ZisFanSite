@@ -16,7 +16,8 @@ function Projects() {
                     title={data[i].title}
                     imageSource={data[i].imageSource}
                     intro={data[i].intro}
-                    description={data[i].description}
+                    paragraphCount={data[i].paragraphCount!}
+                    paragraphs={data[i].paragraphs!}
                 ></Project>
             );
         }

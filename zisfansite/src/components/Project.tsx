@@ -31,27 +31,43 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
     })
 }));
 
-function Project(props: { title: string; imageSource: any; intro: string; description: string }) {
+function Project(props: {
+    title: string;
+    imageSource: any;
+    intro: string;
+    paragraphCount: number;
+    paragraphs: Array<string>;
+}) {
     const [expanded, setExpanded] = React.useState(false);
 
     const handleExpandClick = () => {
         setExpanded(!expanded);
     };
 
+    const getParagraphs = () => {
+        const arr = [];
+        for (let i = 0; i < props.paragraphCount; i++) {
+            arr.push(
+                <Typography key={i} variant="body2">
+                    {props.paragraphs[i]}
+                </Typography>
+            );
+        }
+        return arr;
+    };
+
     return (
         <Card className="ProjectCard">
             <CardActionArea onClick={handleExpandClick}>
                 <CardHeader title={props.title} />
-                <CardMedia component="img" height="194" image={process.env.PUBLIC_URL + props.imageSource} />
+                <CardMedia component="img" image={process.env.PUBLIC_URL + props.imageSource} />
                 <CardContent>
                     <Typography variant="body2" color="primary">
                         {props.intro}
                     </Typography>
                 </CardContent>
                 <Collapse in={expanded} timeout="auto" unmountOnExit>
-                    <CardContent>
-                        <Typography paragraph>{props.description}</Typography>
-                    </CardContent>
+                    <CardContent>{getParagraphs()}</CardContent>
                 </Collapse>
             </CardActionArea>
         </Card>
