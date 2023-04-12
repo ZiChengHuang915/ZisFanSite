@@ -33,15 +33,25 @@ function Home() {
             </div>
             <div className="Icons">
                 <Stack direction="row" spacing={5}>
-                    <Link className="Link" to="/email" target="_blank" rel="noopener noreferrer">
+                    <a className="Link" href="mailto:zichuang127@gmail.com" target="_blank" rel="noopener noreferrer">
                         <EmailIcon sx={IconStyle}></EmailIcon>
-                    </Link>
-                    <Link className="Link" to="/linkedin" target="_blank" rel="noopener noreferrer">
+                    </a>
+                    <a
+                        className="Link"
+                        href="https://www.linkedin.com/in/zichenghuang915/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <LinkedInIcon sx={IconStyle}></LinkedInIcon>
-                    </Link>
-                    <Link className="Link" to="/github" target="_blank" rel="noopener noreferrer">
+                    </a>
+                    <a
+                        className="Link"
+                        href="https://github.com/ZiChengHuang915"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <GitHubIcon sx={IconStyle}></GitHubIcon>
-                    </Link>
+                    </a>
                 </Stack>
             </div>
         </div>
