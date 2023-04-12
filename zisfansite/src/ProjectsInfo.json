@@ -1,0 +1,16 @@
+[
+    {
+        "id": 0,
+        "title": "Ant Simulation",
+        "imageSource": "/images/ant simulation demo.gif",
+        "intro": "An ant simulator, inspired by a project made by Sebastian Lague.",
+        "description": "Over time, this lets the ant colony generate the shortest path to a food source. Because pheromones evaporate over time, less optimal paths will be walked on less, and ants will gravitate towards paths that are more travelled. Iteratively, this produces the optimal path."
+    },
+    {
+        "id": 1,
+        "title": "2Ant Simulation",
+        "imageSource": "/images/ant simulation demo.gif",
+        "intro": "2An ant simulator, inspired by a project made by Sebastian Lague.",
+        "description": "2Over time, this lets the ant colony generate the shortest path to a food source. Because pheromones evaporate over time, less optimal paths will be walked on less, and ants will gravitate towards paths that are more travelled. Iteratively, this produces the optimal path."
+    }
+]

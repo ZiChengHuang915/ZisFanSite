@@ -13,9 +13,9 @@ function Home() {
     const iconHoverSize = 55;
     const IconStyle = {
         fontSize: iconSize,
-        '-webkit-transition': 'all 0.25s ease-out',
-        '-moz-transition': 'all 0.25s ease-out',
-        '-o-transition': 'all 0.25s ease-out',
+        WebkitTransition: 'all 0.25s ease-out',
+        MozTransition: 'all 0.25s ease-out',
+        OTransition: 'all 0.25s ease-out',
         transition: 'all 0.25s ease-out',
         '&:hover': {
             fontSize: iconHoverSize
