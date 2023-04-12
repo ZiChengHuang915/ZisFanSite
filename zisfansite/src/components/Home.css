@@ -1,0 +1,32 @@
+.Content {
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+}
+
+.Name {
+    text-align: left;
+}
+
+.Introduction {
+    margin-top: 5vh;
+    text-align: left;
+}
+
+.Icons {
+    margin-top: 5vh;
+}
+
+.Link {
+    text-decoration: none;
+    color: black;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+
+.Link:hover {
+    text-decoration: none;
+    color: gray;
+}

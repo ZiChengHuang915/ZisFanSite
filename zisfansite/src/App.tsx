@@ -1,25 +1,38 @@
-import React from 'react';
 import './App.css';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import EmailIcon from '@mui/icons-material/Email';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import Stack from '@mui/material/Stack';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
 
 function App() {
     return (
-        <div className="App">
-            <Typography variant="h3">Zi Cheng Huang</Typography>
-            <Typography variant="body1">
-                I'm a Computer Science student at the University of Waterloo. I'm a big fan of enthusiast desktop
-                hardware as well as PC building. In my spare time, I like to play badminton and Minecraft.
-            </Typography>
-            <Stack direction="row" spacing={2}>
-                <EmailIcon></EmailIcon>
-                <LinkedInIcon></LinkedInIcon>
-                <GitHubIcon></GitHubIcon>
-            </Stack>
+        <div>
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route
+                        path="/email"
+                        Component={() => {
+                            window.location.href = 'mailto:zichuang127@gmail.com';
+                            return null;
+                        }}
+                    />
+                    <Route
+                        path="/linkedin"
+                        Component={() => {
+                            window.location.href = 'https://www.linkedin.com/in/zichenghuang915';
+                            return null;
+                        }}
+                    />
+                    <Route
+                        path="/github"
+                        Component={() => {
+                            window.location.href = 'https://github.com/ZiChengHuang915';
+                            return null;
+                        }}
+                    />
+                </Routes>
+            </Router>
         </div>
     );
 }
