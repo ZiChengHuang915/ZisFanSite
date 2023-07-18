@@ -57,20 +57,25 @@ function Project(props: {
     };
 
     return (
-        <Card className="ProjectCard">
-            <CardActionArea onClick={handleExpandClick}>
-                <CardHeader title={props.title} />
-                <CardMedia component="img" image={process.env.PUBLIC_URL + props.imageSource} />
-                <CardContent>
-                    <Typography variant="body2" color="primary">
-                        {props.intro}
-                    </Typography>
-                </CardContent>
-                <Collapse in={expanded} timeout="auto" unmountOnExit>
-                    <CardContent>{getParagraphs()}</CardContent>
-                </Collapse>
-            </CardActionArea>
-        </Card>
+        <div style={{ marginTop: 32 }}>
+            <Card
+                className="ProjectCard"
+                sx={{ minHeight: '62vh', border: 'solid 2px', borderColor: 'primary.light', borderRadius: 5 }}
+            >
+                <CardActionArea onClick={handleExpandClick}>
+                    <CardHeader title={props.title} />
+                    <CardMedia component="img" image={process.env.PUBLIC_URL + props.imageSource} />
+                    <CardContent>
+                        <Typography variant="body2" color="primary">
+                            {props.intro}
+                        </Typography>
+                    </CardContent>
+                    <Collapse in={expanded} timeout="auto" unmountOnExit>
+                        <CardContent>{getParagraphs()}</CardContent>
+                    </Collapse>
+                </CardActionArea>
+            </Card>
+        </div>
     );
 }
 

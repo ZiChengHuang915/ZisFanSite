@@ -5,20 +5,23 @@ import Divider from '@mui/material/Divider';
 import Stack from '@mui/material/Stack';
 import Project from './Project';
 import data from '../ProjectsInfo.json';
+import { Grid } from '@mui/material';
 
 function Projects() {
     const getProjects = () => {
         const arr = [];
         for (let i = 0; i < data.length; i++) {
             arr.push(
-                <Project
-                    key={i}
-                    title={data[i].title}
-                    imageSource={data[i].imageSource}
-                    intro={data[i].intro}
-                    paragraphCount={data[i].paragraphCount!}
-                    paragraphs={data[i].paragraphs!}
-                ></Project>
+                <Grid item xs={64} md={32}>
+                    <Project
+                        key={i}
+                        title={data[i].title}
+                        imageSource={data[i].imageSource}
+                        intro={data[i].intro}
+                        paragraphCount={data[i].paragraphCount!}
+                        paragraphs={data[i].paragraphs!}
+                    ></Project>
+                </Grid>
             );
         }
         return arr;
@@ -28,10 +31,10 @@ function Projects() {
             <div className="ProjectTitle">
                 <Typography variant="h4">Cool Stuff</Typography>
             </div>
-            <Divider></Divider>
-            <Stack spacing={1} alignItems={'stretch'}>
+            <Divider sx={{ borderBottomWidth: 5, bgcolor: 'primary.light' }} />
+            <Grid container columns={64} columnSpacing={4} justifyContent="space-between" alignItems="baseline">
                 {getProjects()}
-            </Stack>
+            </Grid>
         </div>
     );
 }

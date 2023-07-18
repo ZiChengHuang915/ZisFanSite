@@ -14,7 +14,7 @@
     },
     {
         "title": "Puzzle",
-        "imageSource": "/images/Puzzle title.png",
+        "imageSource": "/images/Puzzle title cropped.png",
         "intro": "A Minecraft server administrator to backup, restore, and maintain a Minecraft Server run on a Linux machine.",
         "paragraphCount": 5,
         "paragraphs": [
@@ -27,7 +27,7 @@
     },
     {
         "title": "Gomoku",
-        "imageSource": "/images/Gomoku showcase.png",
+        "imageSource": "/images/Gomoku showcase cropped.jpg",
         "intro": "An AI that plays the board game Gomoku.",
         "paragraphCount": 4,
         "paragraphs": [
@@ -39,7 +39,7 @@
     },
     {
         "title": "Mastermind",
-        "imageSource": "/images/mm-title.jpg",
+        "imageSource": "/images/mm-title cropped.jpg",
         "intro": "A two player code-breaking game.",
         "paragraphCount": 3,
         "paragraphs": [
