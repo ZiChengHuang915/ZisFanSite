@@ -48,7 +48,7 @@ function Project(props: {
         const arr = [];
         for (let i = 0; i < props.paragraphCount; i++) {
             arr.push(
-                <Typography key={i} variant="body2">
+                <Typography key={i} variant="body2" align="left" paragraph={true}>
                     {props.paragraphs[i]}
                 </Typography>
             );

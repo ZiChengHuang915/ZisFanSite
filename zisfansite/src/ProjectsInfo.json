@@ -3,15 +3,11 @@
         "title": "Ant Simulation",
         "imageSource": "/images/ant simulation demo.gif",
         "intro": "An ant simulator, inspired by a project made by Sebastian Lague.",
-        "paragraphCount": 9,
+        "paragraphCount": 5,
         "paragraphs": [
             "The simulation follows several heuristics:",
-            "Ants spawn out of the colony (brown) and aim to find food to bring back to the colony (green).",
-            "Ants randomly explore the area. If they hit the border, they will bounce back immediately.",
-            "While exploring, ants secrete a pheromone a pheromone (blue) that helps guide them home if they have found food. In real life, they use other methods in addition, such as the sun or certain landmarks on the ground.",
-            "If they find food, they secrete a different pheromone to let other ants know of their path (red), and try to find their way home.",
-            "Pheromones evaporate over time.",
-            "While other ants do not have food (exploring), they will try to follow red pheromones because it is more likely to find food if they follow this trail than to randomly explore.",
+            "Ants spawn out of the colony (brown) and aim to find food to bring back to the colony (green). Ants randomly explore the area. If they hit the border, they will bounce back immediately. While exploring, ants secrete a pheromone a pheromone (blue) that helps guide them home if they have found food.",
+            "In real life, they use other methods in addition, such as the sun or certain landmarks on the ground. If they find food, they secrete a different pheromone to let other ants know of their path (red), and try to find their way home. Pheromones evaporate over time. While other ants do not have food (exploring), they will try to follow red pheromones because it is more likely to find food if they follow this trail than to randomly explore.",
             "Over time, this lets the ant colony generate the shortest path to a food source. Because pheromones evaporate over time, less optimal paths will be walked on less, and ants will gravitate towards paths that are more travelled. Iteratively, this produces the optimal path.",
             "If many food sources are present, this is an abstraction of a local search algorithm to solve the travelling salesman problem, where the colony is the origin node, and the food source is all the nodes that have to be visitied."
         ]
@@ -20,18 +16,24 @@
         "title": "Puzzle",
         "imageSource": "/images/Puzzle title.png",
         "intro": "A Minecraft server administrator to backup, restore, and maintain a Minecraft Server run on a Linux machine.",
-        "paragraphCount": 1,
+        "paragraphCount": 5,
         "paragraphs": [
-            "Puzzle is a robust Minecraft Server Administrator that can backup, restore, and maintain a Minecraft server running on a Linux machine. It is programmed using Bash on the Linux Terminal with Vim. The backup feature manipulates the Minecraft save files and pushes them onto a Subversion repository. It uses the Linux Cron Daemon to automatically backup the files at any preassigned time, replicating real world server snapshots. The restore feature allows the restoration of any of the previous saves, up to an allocated amount decided by the user. The repository also auto-deletes outdated world files, saving over 20 TB of space per month."
+            "Puzzle is a robust Minecraft Server Administrator that can backup, restore, and maintain a Minecraft server running on a Linux machine. It is programmed using Bash on the Linux Terminal with Vim.",
+            "The backup feature manipulates the Minecraft save files and pushes them onto a Subversion repository, using the Linux Cron Daemon to automatically backup the files at any preassigned time, replicating real world server snapshots.",
+            "The restore feature allows the restoration of any of the previous saves, up to an allocated amount decided by the user.",
+            "The repository also auto-deletes outdated world files, saving over 20 TB of space per month.",
+            "It also features a web option, where you can control the server remotely. The web app is built with React, and implements RESTful API HTTP requests with Spring Boot in Java, to run shell scripts on the Linux server."
         ]
     },
     {
         "title": "Gomoku",
         "imageSource": "/images/Gomoku showcase.png",
         "intro": "An AI that plays the board game Gomoku.",
-        "paragraphCount": 2,
+        "paragraphCount": 4,
         "paragraphs": [
-            "Gomoku, or Five in a Row, is a board game played with Go pieces. Similar to Tic Tac Toe, players alternate in placing a stone on an empty spot, and the first player to reach five stones in a row wins. However, Gomoku is drastically more complex than other similarly styled m,n,k-games, with a game-tree complexity of 1070 possible game states. This makes the minimax algorithm for the AI component much slower to compute, as there is now a maximum of 15*15 moves possible taken by a player on each move, as opposed to 9 for Tic Tac Toe. With this in mind, and also the fact that the algorithm has to search several moves ahead in time, the computational time required makes it impossible to solve the game, at least in this scale. To optimize the search times, the most popular pruning method, alpha-beta pruning, was used. In addition, only moves that are adjacent to the current game shape are considered, meaning moves that are far away from any other pieces are omitted.",
+            "Gomoku, or Five in a Row, is a board game played with Go pieces. Similar to Tic Tac Toe, players alternate in placing a stone on an empty spot, and the first player to reach five stones in a row wins. However, Gomoku is drastically more complex than other similarly styled m,n,k-games, with a game-tree complexity of 1070 possible game states.",
+            "This makes the minimax algorithm for the AI component much slower to compute, as there is now a maximum of 15*15 moves possible taken by a player on each move, as opposed to 9 for Tic Tac Toe. With this in mind, and also the fact that the algorithm has to search several moves ahead in time, the computational time required makes it impossible to solve the game, at least in this scale.",
+            "To optimize the search times, the most popular pruning method, alpha-beta pruning, was used. In addition, only moves that are adjacent to the current game shape are considered, meaning moves that are far away from any other pieces are omitted.",
             "Fortunately, Gomoku is solved, meaning that there is a winning strategy such that if played perfectly, the first player (black) will always win. This project was coded in Java and the sprites created in Photoshop."
         ]
     },
@@ -39,9 +41,10 @@
         "title": "Mastermind",
         "imageSource": "/images/mm-title.jpg",
         "intro": "A two player code-breaking game.",
-        "paragraphCount": 2,
+        "paragraphCount": 3,
         "paragraphs": [
-            "Mastermind, according to Wikipedia, is a code-breaking game for two players. The game is played using a decoding board, eight colors, and an adjustable code length (4 by default). One player creates a code, and the other tries to guess the code in an alotted number of tries, usually 12. After each try, the first player gives hints based on the code that the second player has just guessed. The blue circles represent the number of correct colors in the wrong position, and the red circles represent the number of correct colors in the right position. Based on this input, player two supposedly makes a better guess each time.",
+            "Mastermind, according to Wikipedia, is a code-breaking game for two players. The game is played using a decoding board, eight colors, and an adjustable code length (4 by default). One player creates a code, and the other tries to guess the code in an alotted number of tries, usually 12.",
+            "After each try, the first player gives hints based on the code that the second player has just guessed. The blue circles represent the number of correct colors in the wrong position, and the red circles represent the number of correct colors in the right position. Based on this input, player two supposedly makes a better guess each time.",
             "The graphics, especially the circle making, was sourced from a text named Pixel Graphics. This project was coded in Turing."
         ]
     },
@@ -49,9 +52,10 @@
         "title": "Tic Tac Toe",
         "imageSource": "/images/TicTacToe AI vs AI Demonstration.gif",
         "intro": "An AI that plays the popular game Tic Tac Toe.",
-        "paragraphCount": 1,
+        "paragraphCount": 2,
         "paragraphs": [
-            "Tic Tac Toe is a pen and paper game for two players. The bot uses the minimax algorithm to figure out the best move to make. It is a recursive algorithm, which chooses the optimal move while also assuming the opponent also will make an optimal move. One player is the maximizer (tries to maximize the score), and the other is the minimizer. For example, a win for X would be considered the max score, so the algorithm would try to achieve the max score. Since Tic Tac Toe has a relatively small board, the number of possible game moves is only 5478 (see math.stackexchange user MJD's calculations here). For a much more complex game such as Chess or Go, a more efficient method like alpha-beta pruning would be used to optimize the search times. This project was coded in Java."
+            "Tic Tac Toe is a pen and paper game for two players. The bot uses the minimax algorithm to figure out the best move to make. It is a recursive algorithm, which chooses the optimal move while also assuming the opponent also will make an optimal move. One player is the maximizer (tries to maximize the score), and the other is the minimizer. For example, a win for X would be considered the max score, so the algorithm would try to achieve the max score.",
+            "Since Tic Tac Toe has a relatively small board, the number of possible game moves is only 5478. For a much more complex game such as Chess or Go, a more efficient method like alpha-beta pruning would be used to optimize the search times. This project was coded in Java."
         ]
     }
 ]
