@@ -60,7 +60,13 @@ function Project(props: {
         <div style={{ marginTop: 32 }}>
             <Card
                 className="ProjectCard"
-                sx={{ minHeight: '62vh', border: 'solid 2px', borderColor: 'primary.light', borderRadius: 5 }}
+                sx={{
+                    minHeight: '62vh',
+                    border: 'solid 2px',
+                    borderColor: 'primary.light',
+                    borderRadius: 5,
+                    boxShadow: '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)'
+                }}
             >
                 <CardActionArea onClick={handleExpandClick}>
                     <CardHeader title={props.title} />

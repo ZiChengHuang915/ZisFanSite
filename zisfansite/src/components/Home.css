@@ -40,3 +40,8 @@
     text-decoration: none;
     color: var(--primary-light);
 }
+
+.BottomBar {
+    margin-top: 10vh;
+    margin-bottom: 1vh;
+}

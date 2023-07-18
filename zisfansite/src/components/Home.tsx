@@ -7,6 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import Stack from '@mui/material/Stack';
 import { Link } from 'react-router-dom';
 import Projects from './Projects';
+import About from './About';
 
 function Home() {
     const iconSize = 50;
@@ -66,6 +67,11 @@ function Home() {
                 </div>
             </div>
             <Projects></Projects>
+            <About></About>
+
+            <div className="BottomBar">
+                <Typography>Zi Cheng Huang © 2023</Typography>
+            </div>
         </div>
     );
 }
