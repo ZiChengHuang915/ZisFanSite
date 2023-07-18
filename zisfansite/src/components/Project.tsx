@@ -37,7 +37,6 @@ function Project(props: {
             <Card
                 className="ProjectCard"
                 sx={{
-                    minHeight: '62vh',
                     border: 'solid 2px',
                     borderColor: 'primary.light',
                     borderRadius: 5,
@@ -45,9 +44,18 @@ function Project(props: {
                 }}
             >
                 <CardActionArea onClick={handleExpandClick}>
-                    <CardHeader title={props.title} />
-                    <CardMedia component="img" image={process.env.PUBLIC_URL + props.imageSource} />
-                    <CardContent>
+                    <CardHeader style={{ minHeight: '6vh' }} title={props.title} />
+                    <CardMedia
+                        sx={{
+                            borderTop: 'solid 2px',
+                            borderBottom: 'solid 2px',
+                            borderColor: 'primary.light',
+                            borderRadius: 0
+                        }}
+                        component="img"
+                        image={process.env.PUBLIC_URL + props.imageSource}
+                    />
+                    <CardContent style={{ minHeight: '6vh' }}>
                         <Typography variant="body2" color="primary">
                             {props.intro}
                         </Typography>

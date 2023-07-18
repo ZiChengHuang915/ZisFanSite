@@ -1,7 +1,7 @@
 [
     {
         "title": "Ant Simulation",
-        "imageSource": "/images/ant simulation demo.gif",
+        "imageSource": "/images/ant simulation demo cropped.gif",
         "intro": "An ant simulator, inspired by a project made by Sebastian Lague.",
         "paragraphCount": 5,
         "paragraphs": [
@@ -15,7 +15,7 @@
     {
         "title": "Puzzle",
         "imageSource": "/images/Puzzle title cropped.png",
-        "intro": "A Minecraft server administrator to backup, restore, and maintain a Minecraft Server run on a Linux machine.",
+        "intro": "A Minecraft server administrator to maintain a Minecraft Server run on Linux.",
         "paragraphCount": 5,
         "paragraphs": [
             "Puzzle is a robust Minecraft Server Administrator that can backup, restore, and maintain a Minecraft server running on a Linux machine. It is programmed using Bash on the Linux Terminal with Vim.",

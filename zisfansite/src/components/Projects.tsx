@@ -32,7 +32,7 @@ function Projects() {
                 <Typography variant="h4">Cool Stuff</Typography>
             </div>
             <Divider sx={{ borderBottomWidth: 5, bgcolor: 'primary.light' }} />
-            <Grid container columns={64} columnSpacing={4} justifyContent="space-between" alignItems="baseline">
+            <Grid container columns={64} columnSpacing={4} justifyContent="space-between" alignItems="stretch">
                 {getProjects()}
             </Grid>
         </div>
