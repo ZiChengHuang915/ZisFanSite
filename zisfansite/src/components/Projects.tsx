@@ -31,7 +31,7 @@ function Projects() {
             <div className="ProjectTitle">
                 <Typography variant="h4">Cool Stuff</Typography>
             </div>
-            <Divider sx={{ borderBottomWidth: 5, bgcolor: 'primary.light' }} />
+            <Divider sx={{ borderBottomWidth: 5, bgcolor: 'primary.dark' }} />
             <Grid container columns={64} columnSpacing={4} justifyContent="space-between" alignItems="stretch">
                 {getProjects()}
             </Grid>

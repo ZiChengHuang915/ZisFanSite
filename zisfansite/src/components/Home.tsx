@@ -11,7 +11,7 @@ import About from './About';
 
 function Home() {
     const iconSize = 50;
-    const iconHoverSize = 55;
+    const iconHoverSize = 70;
     const IconStyle = {
         fontSize: iconSize,
         WebkitTransition: 'all 0.25s ease-out',
@@ -26,12 +26,12 @@ function Home() {
         <div className="HomePage">
             <div className="HomeContent">
                 <div className="Name">
-                    <Typography color="primary.main" variant="h3">
+                    <Typography color="primary.contrastText" variant="h3">
                         Zi Cheng Huang
                     </Typography>
                 </div>
                 <div className="Introduction">
-                    <Typography color="primary.light" variant="body1">
+                    <Typography color="primary.contrastText" variant="body1">
                         I'm a Computer Science student at the University of Waterloo. I'm a big fan of enthusiast
                         desktop hardware as well as PC building. In my spare time, I like to play badminton and
                         Minecraft.

@@ -6,8 +6,10 @@ import Home from './components/Home';
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#000000',
-            light: '#666666'
+            main: '#AF9FA5',
+            light: '#EDE3E4',
+            dark: '#92898A',
+            contrastText: '#000000'
         }
     }
 });
@@ -15,7 +17,7 @@ const theme = createTheme({
 function App() {
     return (
         <ThemeProvider theme={theme}>
-            <div>
+            <div className="AppBackground">
                 <Router>
                     <Routes>
                         <Route path="/" element={<Home />} />

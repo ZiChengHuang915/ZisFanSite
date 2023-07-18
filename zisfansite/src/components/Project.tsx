@@ -38,7 +38,7 @@ function Project(props: {
                 className="ProjectCard"
                 sx={{
                     border: 'solid 2px',
-                    borderColor: 'primary.light',
+                    borderColor: 'primary.dark',
                     borderRadius: 5,
                     boxShadow: '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)'
                 }}
@@ -49,14 +49,14 @@ function Project(props: {
                         sx={{
                             borderTop: 'solid 2px',
                             borderBottom: 'solid 2px',
-                            borderColor: 'primary.light',
+                            borderColor: 'primary.dark',
                             borderRadius: 0
                         }}
                         component="img"
                         image={process.env.PUBLIC_URL + props.imageSource}
                     />
                     <CardContent style={{ minHeight: '6vh' }}>
-                        <Typography variant="body2" color="primary">
+                        <Typography variant="body2" color="primary.contrastText">
                             {props.intro}
                         </Typography>
                     </CardContent>

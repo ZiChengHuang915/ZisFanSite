@@ -9,7 +9,7 @@ function About() {
                 <Typography variant="h4">About Me</Typography>
             </div>
             <div className="AboutDivider">
-                <Divider sx={{ borderBottomWidth: 5, bgcolor: 'primary.light' }} />
+                <Divider sx={{ borderBottomWidth: 5, bgcolor: 'primary.dark' }} />
             </div>
 
             <Typography variant="h5">Bachelor of Computer Science</Typography>
