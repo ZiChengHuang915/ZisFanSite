@@ -20,6 +20,9 @@ function Projects() {
                         intro={data[i].intro}
                         paragraphCount={data[i].paragraphCount!}
                         paragraphs={data[i].paragraphs!}
+                        githubLink={data[i].githubLink}
+                        languageCount={data[i].languageCount}
+                        languages={data[i].languages}
                     ></Project>
                 </Grid>
             );
