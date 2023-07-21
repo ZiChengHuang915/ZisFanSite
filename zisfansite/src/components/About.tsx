@@ -1,14 +1,16 @@
 import React from 'react';
 import './About.css';
-import { Divider, Typography } from '@mui/material';
+import { Divider, Grow, Typography } from '@mui/material';
 
 function About() {
     return (
         <div className="AboutPage">
             <div className="AboutTitle">
-                <Typography color="primary.dark" variant="h4">
-                    About Me
-                </Typography>
+                <Grow in={true} timeout={1000}>
+                    <Typography color="primary.dark" variant="h4">
+                        About Me
+                    </Typography>
+                </Grow>
             </div>
             <div className="AboutDivider">
                 <Divider sx={{ borderBottomWidth: 5, bgcolor: 'primary.main' }} />

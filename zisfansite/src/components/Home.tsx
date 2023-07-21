@@ -8,6 +8,7 @@ import Stack from '@mui/material/Stack';
 import { Link } from 'react-router-dom';
 import Projects from './Projects';
 import About from './About';
+import { Fade } from '@mui/material';
 
 function Home() {
     const iconSize = 50;
@@ -26,9 +27,11 @@ function Home() {
         <div className="HomePage">
             <div className="HomeContent">
                 <div className="Name">
-                    <Typography color="primary.dark" variant="h3">
-                        Zi Cheng Huang
-                    </Typography>
+                    <Fade in={true} timeout={1000}>
+                        <Typography color="primary.dark" variant="h3">
+                            Zi Cheng Huang
+                        </Typography>
+                    </Fade>
                 </div>
                 <div className="Introduction">
                     <Typography color="primary.contrastText" variant="body1">

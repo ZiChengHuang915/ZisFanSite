@@ -1,11 +1,9 @@
-import React from 'react';
 import './Projects.css';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
-import Stack from '@mui/material/Stack';
 import Project from './Project';
 import data from '../ProjectsInfo.json';
-import { Grid } from '@mui/material';
+import { Grid, Grow } from '@mui/material';
 
 function Projects() {
     const getProjects = () => {
@@ -32,9 +30,11 @@ function Projects() {
     return (
         <div className="ProjectsPage">
             <div className="ProjectTitle">
-                <Typography color="primary.dark" variant="h4">
-                    Cool Stuff
-                </Typography>
+                <Grow in={true} timeout={1000}>
+                    <Typography color="primary.dark" variant="h4">
+                        Cool Stuff
+                    </Typography>
+                </Grow>
             </div>
             <Divider sx={{ borderBottomWidth: 5, bgcolor: 'primary.main' }} />
             <Grid container columns={64} columnSpacing={4} justifyContent="space-between" alignItems="stretch">
