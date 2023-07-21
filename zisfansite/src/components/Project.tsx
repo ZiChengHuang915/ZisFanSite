@@ -74,12 +74,14 @@ function Project(props: {
         <div style={{ marginTop: 32 }}>
             <Slide direction="up" in={true} mountOnEnter unmountOnExit timeout={1000}>
                 <Card
-                    className="ProjectCard"
                     sx={{
                         border: 'solid 2px',
                         borderColor: 'primary.main',
                         borderRadius: 5,
-                        boxShadow: '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)'
+                        boxShadow: '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)',
+                        '&:hover': {
+                            boxShadow: '0 21px 42px rgba(0,0,0,0.25), 0 15px 15px rgba(0,0,0,0.22)'
+                        }
                     }}
                 >
                     <CardActionArea onClick={handleExpandClick}>
