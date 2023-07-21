@@ -28,7 +28,7 @@ function Project(props: {
         const arr = [];
         for (let i = 0; i < props.paragraphCount; i++) {
             arr.push(
-                <Typography key={i} variant="body2" align="left" paragraph={true}>
+                <Typography color="primary.contrastText" key={i} variant="body2" align="left" paragraph={true}>
                     {props.paragraphs[i]}
                 </Typography>
             );
@@ -76,7 +76,7 @@ function Project(props: {
                 className="ProjectCard"
                 sx={{
                     border: 'solid 2px',
-                    borderColor: 'primary.dark',
+                    borderColor: 'primary.main',
                     borderRadius: 5,
                     boxShadow: '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)'
                 }}
@@ -87,7 +87,7 @@ function Project(props: {
                         sx={{
                             borderTop: 'solid 2px',
                             borderBottom: 'solid 2px',
-                            borderColor: 'primary.dark',
+                            borderColor: 'primary.main',
                             borderRadius: 0
                         }}
                         component="img"
@@ -106,7 +106,7 @@ function Project(props: {
                     <Typography variant="body2" color="primary.contrastText">
                         <Stack direction="row" justifyContent="space-between">
                             <Link className="Link" to={props.githubLink} target="_blank" rel="noopener noreferrer">
-                                <GitHubIcon sx={IconStyle}></GitHubIcon>
+                                <GitHubIcon style={{ color: 'primary.main' }} sx={IconStyle}></GitHubIcon>
                             </Link>
                             <Stack direction="row" spacing={2} sx={{ display: { xs: 'none', lg: 'block' } }}>
                                 {getLanguages()}

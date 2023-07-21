@@ -6,9 +6,9 @@ import Home from './components/Home';
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#AF9FA5',
-            light: '#EDE3E4',
-            dark: '#92898A',
+            main: '#a2d2ff',
+            light: '#E1EFF6',
+            dark: '#4E5760',
             contrastText: '#000000'
         }
     }

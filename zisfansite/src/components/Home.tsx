@@ -26,7 +26,7 @@ function Home() {
         <div className="HomePage">
             <div className="HomeContent">
                 <div className="Name">
-                    <Typography color="primary.contrastText" variant="h3">
+                    <Typography color="primary.dark" variant="h3">
                         Zi Cheng Huang
                     </Typography>
                 </div>
