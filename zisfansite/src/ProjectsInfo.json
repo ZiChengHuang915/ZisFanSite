@@ -1,5 +1,21 @@
 [
     {
+        "title": "Impression",
+        "imageSource": "/images/impression demo cropped.gif",
+        "intro": "A game to explore the effects of AI police sketches.",
+        "paragraphCount": 5,
+        "paragraphs": [
+            "This project aimed to quantify the bias that AI genenerated police sketches has compared to traditional hand drawn ones, by testing the memory recognition of participants when they are exposed to a quick glimpse of suspects similar to a crime scene.",
+            "The game consists of the following elements:",
+            "The user would be shown a portrait of a person for some period of time. Then, they would be asked to describe the person using descriptive language. The description would be sent to an AI program (such as DALL-E) to generate multiple sketches, and it would be sent back to the user along with an actual additional image to see if the user can differentiate between the real person and an AI generated one.",
+            "It's important to note that the game does not tell the user what the objective of the game is at any point to maintain realism. If the user is told their objective, they will likely be more alert and pay more attention to specific physical features, but in real life, people are not always alert to the people around them. It was tested on 18 participants, and 73% successfully identified the suspect of the orignal image. However, it was noted that users did better when they gave less keywords to describe the image.",
+            "Based on these results, it can be concluded that if a user gives a detailed description of a person that they saw briefly, they are more likely than not to misidentify the original person amongst other AI generated images. It's believed that this is largely because of their biases being reinforced by the same biases that the AI image generator holds."
+        ],
+        "githubLink": "https://github.com/ZiChengHuang915/ideal-palm-tree",
+        "languageCount": 2,
+        "languages": ["TypeScript", "HTML & CSS"]
+    },
+    {
         "title": "Ant Simulation",
         "imageSource": "/images/ant simulation demo cropped.gif",
         "intro": "An ant simulator, inspired by a project made by Sebastian Lague.",
@@ -9,7 +25,7 @@
             "Ants spawn out of the colony (brown) and aim to find food to bring back to the colony (green). Ants randomly explore the area. If they hit the border, they will bounce back immediately. While exploring, ants secrete a pheromone a pheromone (blue) that helps guide them home if they have found food.",
             "In real life, they use other methods in addition, such as the sun or certain landmarks on the ground. If they find food, they secrete a different pheromone to let other ants know of their path (red), and try to find their way home. Pheromones evaporate over time. While other ants do not have food (exploring), they will try to follow red pheromones because it is more likely to find food if they follow this trail than to randomly explore.",
             "Over time, this lets the ant colony generate the shortest path to a food source. Because pheromones evaporate over time, less optimal paths will be walked on less, and ants will gravitate towards paths that are more travelled. Iteratively, this produces the optimal path.",
-            "If many food sources are present, this is an abstraction of a local search algorithm to solve the travelling salesman problem, where the colony is the origin node, and the food source is all the nodes that have to be visitied."
+            "If many food sources are present, this is an abstraction of a local search algorithm to solve the travelling salesman problem, where the colony is the origin node, and the food source is all the nodes that have to be visited."
         ],
         "githubLink": "https://github.com/ZiChengHuang915/Ant-Simulation",
         "languageCount": 2,

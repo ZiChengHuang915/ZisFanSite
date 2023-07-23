@@ -45,7 +45,8 @@ function Project(props: {
             Shell: '#89e051',
             Java: '#b07219',
             C: '#555555',
-            Turing: '#cf142b'
+            Turing: '#cf142b',
+            TypeScript: '#3178c6'
         };
         const arr = [];
         for (let i = 0; i < props.languageCount; i++) {
